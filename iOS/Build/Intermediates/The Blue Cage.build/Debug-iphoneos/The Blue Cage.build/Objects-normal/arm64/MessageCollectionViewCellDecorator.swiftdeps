@@ -1,0 +1,183 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MessageCollectionViewCellDecorator"
+provides-nominal:
+- "V13The_Blue_Cage34MessageCollectionViewCellDecorator"
+provides-member:
+- ["V13The_Blue_Cage34MessageCollectionViewCellDecorator", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "MessageCollectionViewCell"
+- "Message"
+- "MessageCollectionViewCellDecorator"
+- "AssignmentPrecedence"
+depends-member:
+- !private ["Ps9AnyObject", "anchorButton"]
+- !private ["Ps9AnyObject", "isSelected"]
+- !private ["Ps9AnyObject", "messageLabel"]
+- !private ["Ps9AnyObject", "text"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "anchorButton"]
+- !private ["PSo15CALayerDelegate", "isSelected"]
+- !private ["PSo15CALayerDelegate", "messageLabel"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "anchorButton"]
+- !private ["Ps7CVarArg", "isSelected"]
+- !private ["Ps7CVarArg", "messageLabel"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "anchorButton"]
+- !private ["Ps28CustomDebugStringConvertible", "isSelected"]
+- !private ["Ps28CustomDebugStringConvertible", "messageLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "anchorButton"]
+- !private ["Ps23CustomStringConvertible", "isSelected"]
+- !private ["Ps23CustomStringConvertible", "messageLabel"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps9Equatable", "anchorButton"]
+- !private ["Ps9Equatable", "isLiked"]
+- !private ["Ps9Equatable", "isSelected"]
+- !private ["Ps9Equatable", "messageLabel"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps8Hashable", "anchorButton"]
+- !private ["Ps8Hashable", "isSelected"]
+- !private ["Ps8Hashable", "messageLabel"]
+- !private ["Ps8Hashable", "text"]
+- ["V13The_Blue_Cage7Message", "deinit"]
+- !private ["V13The_Blue_Cage7Message", "isLiked"]
+- !private ["V13The_Blue_Cage7Message", "text"]
+- !private ["C13The_Blue_Cage25MessageCollectionViewCell", "anchorButton"]
+- ["C13The_Blue_Cage25MessageCollectionViewCell", "deinit"]
+- !private ["C13The_Blue_Cage25MessageCollectionViewCell", "messageLabel"]
+- ["V13The_Blue_Cage34MessageCollectionViewCellDecorator", "Message"]
+- ["V13The_Blue_Cage34MessageCollectionViewCellDecorator", "MessageCollectionViewCell"]
+- ["V13The_Blue_Cage34MessageCollectionViewCellDecorator", "decorate"]
+- ["V13The_Blue_Cage34MessageCollectionViewCellDecorator", "init"]
+- !private ["PSo8NSCoding", "anchorButton"]
+- !private ["PSo8NSCoding", "isSelected"]
+- !private ["PSo8NSCoding", "messageLabel"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["CSo8NSObject", "anchorButton"]
+- !private ["CSo8NSObject", "isSelected"]
+- !private ["CSo8NSObject", "messageLabel"]
+- !private ["CSo8NSObject", "text"]
+- !private ["PSo16NSObjectProtocol", "anchorButton"]
+- !private ["PSo16NSObjectProtocol", "isSelected"]
+- !private ["PSo16NSObjectProtocol", "messageLabel"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["SS", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "anchorButton"]
+- !private ["PSo29UIAccessibilityIdentification", "isSelected"]
+- !private ["PSo29UIAccessibilityIdentification", "messageLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "anchorButton"]
+- !private ["PSo12UIAppearance", "isSelected"]
+- !private ["PSo12UIAppearance", "messageLabel"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "anchorButton"]
+- !private ["PSo21UIAppearanceContainer", "isSelected"]
+- !private ["PSo21UIAppearanceContainer", "messageLabel"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["CSo8UIButton", "isSelected"]
+- !private ["CSo24UICollectionReusableView", "anchorButton"]
+- !private ["CSo24UICollectionReusableView", "messageLabel"]
+- !private ["CSo20UICollectionViewCell", "anchorButton"]
+- !private ["CSo20UICollectionViewCell", "messageLabel"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "isSelected"]
+- !private ["PSo17UICoordinateSpace", "anchorButton"]
+- !private ["PSo17UICoordinateSpace", "isSelected"]
+- !private ["PSo17UICoordinateSpace", "messageLabel"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "anchorButton"]
+- !private ["PSo13UIDynamicItem", "isSelected"]
+- !private ["PSo13UIDynamicItem", "messageLabel"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "anchorButton"]
+- !private ["PSo18UIFocusEnvironment", "isSelected"]
+- !private ["PSo18UIFocusEnvironment", "messageLabel"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo11UIFocusItem", "anchorButton"]
+- !private ["PSo11UIFocusItem", "isSelected"]
+- !private ["PSo11UIFocusItem", "messageLabel"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo11UIResponder", "anchorButton"]
+- !private ["CSo11UIResponder", "isSelected"]
+- !private ["CSo11UIResponder", "messageLabel"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "anchorButton"]
+- !private ["PSo30UIResponderStandardEditActions", "isSelected"]
+- !private ["PSo30UIResponderStandardEditActions", "messageLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo18UITraitEnvironment", "anchorButton"]
+- !private ["PSo18UITraitEnvironment", "isSelected"]
+- !private ["PSo18UITraitEnvironment", "messageLabel"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["CSo6UIView", "anchorButton"]
+- !private ["CSo6UIView", "isSelected"]
+- !private ["CSo6UIView", "messageLabel"]
+- !private ["CSo6UIView", "text"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "anchorButton"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isSelected"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "messageLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps9_Hashable", "anchorButton"]
+- !private ["Ps9_Hashable", "isSelected"]
+- !private ["Ps9_Hashable", "messageLabel"]
+- !private ["Ps9_Hashable", "text"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- !private "Ps7CVarArg"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- "V13The_Blue_Cage7Message"
+- "C13The_Blue_Cage25MessageCollectionViewCell"
+- "V13The_Blue_Cage34MessageCollectionViewCellDecorator"
+- !private "PSo8NSCoding"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- "SS"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- !private "CSo24UICollectionReusableView"
+- !private "CSo20UICollectionViewCell"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UILabel"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GameplayKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+interface-hash: "e82975e2c59878a8a89e3a06216284f8"

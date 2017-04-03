@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2t9-Cf-dN3" customClass="MessageCollectionViewCell" customModule="The_Blue_Cage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="281" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Bz-Jj-jrU">
+                        <rect key="frame" x="57" y="8" width="208" height="71"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdL-Ho-bim">
+                                <rect key="frame" x="4" y="4" width="200" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EdL-Ho-bim" secondAttribute="bottom" constant="4" id="7Ja-6y-RNp"/>
+                            <constraint firstItem="EdL-Ho-bim" firstAttribute="leading" secondItem="8Bz-Jj-jrU" secondAttribute="leading" constant="4" id="Ray-TK-qbn"/>
+                            <constraint firstItem="EdL-Ho-bim" firstAttribute="top" secondItem="8Bz-Jj-jrU" secondAttribute="top" constant="4" id="YmG-KA-y1v"/>
+                            <constraint firstAttribute="trailing" secondItem="EdL-Ho-bim" secondAttribute="trailing" constant="4" id="uuW-qg-IxV"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5Z-bX-N4s">
+                        <rect key="frame" x="8" y="28" width="41" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="Bd0-po-qSO"/>
+                            <constraint firstAttribute="height" constant="31" id="H1r-sf-E2O"/>
+                        </constraints>
+                        <state key="normal" image="emptyAnchor"/>
+                        <state key="selected" image="FilledAnchor"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8Bz-Jj-jrU" firstAttribute="leading" secondItem="y5Z-bX-N4s" secondAttribute="trailing" constant="8" id="4Th-N6-Eeh"/>
+                <constraint firstAttribute="trailing" secondItem="8Bz-Jj-jrU" secondAttribute="trailing" constant="16" id="7gB-Jd-TZq"/>
+                <constraint firstItem="8Bz-Jj-jrU" firstAttribute="centerY" secondItem="y5Z-bX-N4s" secondAttribute="centerY" id="MUm-DZ-n6B"/>
+                <constraint firstItem="y5Z-bX-N4s" firstAttribute="leading" secondItem="2t9-Cf-dN3" secondAttribute="leading" constant="8" id="kVH-eR-FZI"/>
+                <constraint firstAttribute="bottom" secondItem="8Bz-Jj-jrU" secondAttribute="bottom" constant="8" id="rsM-5R-jCL"/>
+                <constraint firstItem="8Bz-Jj-jrU" firstAttribute="top" secondItem="2t9-Cf-dN3" secondAttribute="top" constant="8" id="y8v-b1-wvF"/>
+            </constraints>
+            <size key="customSize" width="281" height="87"/>
+            <connections>
+                <outlet property="anchorButton" destination="y5Z-bX-N4s" id="RQT-yq-nlb"/>
+                <outlet property="bubbleView" destination="8Bz-Jj-jrU" id="qZG-Mu-cED"/>
+                <outlet property="messageLabel" destination="EdL-Ho-bim" id="nPY-tp-Hho"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="31.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="FilledAnchor" width="27" height="31"/>
+        <image name="emptyAnchor" width="25" height="29"/>
+    </resources>
+</document>

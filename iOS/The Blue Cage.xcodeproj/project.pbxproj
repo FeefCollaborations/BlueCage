@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		483EAA631E86FC4400194600 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483EAA621E86FC4400194600 /* RefreshButton.swift */; };
+		483EAA691E870E7200194600 /* MessageCollectionViewCellDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483EAA681E870E7200194600 /* MessageCollectionViewCellDecorator.swift */; };
+		483EAA6B1E87103300194600 /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483EAA6A1E87103300194600 /* MessageCollectionViewCell.swift */; };
+		483EAA6F1E8711FB00194600 /* SenderMessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483EAA6E1E8711FB00194600 /* SenderMessageCollectionViewCell.xib */; };
+		483EAA711E87120A00194600 /* ReceiverMessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483EAA701E87120A00194600 /* ReceiverMessageCollectionViewCell.xib */; };
+		484374461E8684F60046F2B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374451E8684F60046F2B1 /* AppDelegate.swift */; };
+		4843744B1E8684F60046F2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484374491E8684F60046F2B1 /* Main.storyboard */; };
+		4843744D1E8684F60046F2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4843744C1E8684F60046F2B1 /* Assets.xcassets */; };
+		484374501E8684F60046F2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4843744E1E8684F60046F2B1 /* LaunchScreen.storyboard */; };
+		4843745B1E8684F60046F2B1 /* The_Blue_CageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4843745A1E8684F60046F2B1 /* The_Blue_CageTests.swift */; };
+		484374661E8684F60046F2B1 /* The_Blue_CageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374651E8684F60046F2B1 /* The_Blue_CageUITests.swift */; };
+		484374741E8687710046F2B1 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374731E8687710046F2B1 /* ConversationListViewController.swift */; };
+		484374761E8688B00046F2B1 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374751E8688B00046F2B1 /* ConversationViewController.swift */; };
+		484374781E8689210046F2B1 /* ConversationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484374771E8689210046F2B1 /* ConversationViewController.xib */; };
+		4843747A1E868D330046F2B1 /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374791E868D330046F2B1 /* ConversationTableViewCell.swift */; };
+		4843747C1E868E690046F2B1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4843747B1E868E690046F2B1 /* SettingsViewController.swift */; };
+		4843747E1E868EBC0046F2B1 /* AddConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4843747D1E868EBC0046F2B1 /* AddConversationViewController.swift */; };
+		484374801E869D070046F2B1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4843747F1E869D070046F2B1 /* WelcomeViewController.swift */; };
+		484374821E869D3D0046F2B1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374811E869D3D0046F2B1 /* SignUpViewController.swift */; };
+		484374841E869E030046F2B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374831E869E030046F2B1 /* LoginViewController.swift */; };
+		484374871E869FE60046F2B1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374861E869FE60046F2B1 /* User.swift */; };
+		4843748A1E86A1BD0046F2B1 /* SignUpNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374891E86A1BD0046F2B1 /* SignUpNetworkTask.swift */; };
+		4843748D1E86AE200046F2B1 /* LoginNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4843748C1E86AE200046F2B1 /* LoginNetworkTask.swift */; };
+		4843748F1E86AE5C0046F2B1 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4843748E1E86AE5C0046F2B1 /* NetworkTask.swift */; };
+		484374911E86B63C0046F2B1 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484374901E86B63C0046F2B1 /* KeyboardManager.swift */; };
+		4868BE231E86C57300786DDC /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4868BE221E86C57300786DDC /* CGRect.swift */; };
+		4868BE261E86C8B300786DDC /* ConversationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4868BE251E86C8B300786DDC /* ConversationTableViewCell.xib */; };
+		4868BE281E86CD0D00786DDC /* ConversationTableViewCellDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4868BE271E86CD0D00786DDC /* ConversationTableViewCellDecorator.swift */; };
+		4868BE2A1E86CD4900786DDC /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4868BE291E86CD4900786DDC /* Conversation.swift */; };
+		4868BE2C1E86CD5700786DDC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4868BE2B1E86CD5700786DDC /* Message.swift */; };
+		4868BE2F1E86D37600786DDC /* BadgeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4868BE2E1E86D37600786DDC /* BadgeSwift.swift */; };
+		48879B8B1E87B2AE009BFF9B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48879B8A1E87B2AE009BFF9B /* UIColor.swift */; };
+		48879B911E87B9C1009BFF9B /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48879B901E87B9C1009BFF9B /* Stickers.xcassets */; };
+		48879B951E87B9C1009BFF9B /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48879B8E1E87B9C1009BFF9B /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		48E67DC71E86F2CF00F4C483 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E67DC61E86F2CF00F4C483 /* DateFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		484374571E8684F60046F2B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4843743A1E8684F50046F2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 484374411E8684F50046F2B1;
+			remoteInfo = "The Blue Cage";
+		};
+		484374621E8684F60046F2B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4843743A1E8684F50046F2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 484374411E8684F50046F2B1;
+			remoteInfo = "The Blue Cage";
+		};
+		48879B931E87B9C1009BFF9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4843743A1E8684F50046F2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48879B8D1E87B9C1009BFF9B;
+			remoteInfo = Stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48879B991E87B9C1009BFF9B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				48879B951E87B9C1009BFF9B /* Stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		483EAA621E86FC4400194600 /* RefreshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
+		483EAA681E870E7200194600 /* MessageCollectionViewCellDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCellDecorator.swift; sourceTree = "<group>"; };
+		483EAA6A1E87103300194600 /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		483EAA6E1E8711FB00194600 /* SenderMessageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SenderMessageCollectionViewCell.xib; sourceTree = "<group>"; };
+		483EAA701E87120A00194600 /* ReceiverMessageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiverMessageCollectionViewCell.xib; sourceTree = "<group>"; };
+		484374421E8684F60046F2B1 /* The Blue Cage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Blue Cage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		484374451E8684F60046F2B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4843744A1E8684F60046F2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4843744C1E8684F60046F2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4843744F1E8684F60046F2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		484374511E8684F60046F2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484374561E8684F60046F2B1 /* The Blue CageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Blue CageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4843745A1E8684F60046F2B1 /* The_Blue_CageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Blue_CageTests.swift; sourceTree = "<group>"; };
+		4843745C1E8684F60046F2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484374611E8684F60046F2B1 /* The Blue CageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Blue CageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		484374651E8684F60046F2B1 /* The_Blue_CageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Blue_CageUITests.swift; sourceTree = "<group>"; };
+		484374671E8684F60046F2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484374731E8687710046F2B1 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
+		484374751E8688B00046F2B1 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		484374771E8689210046F2B1 /* ConversationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConversationViewController.xib; sourceTree = "<group>"; };
+		484374791E868D330046F2B1 /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		4843747B1E868E690046F2B1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4843747D1E868EBC0046F2B1 /* AddConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddConversationViewController.swift; sourceTree = "<group>"; };
+		4843747F1E869D070046F2B1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		484374811E869D3D0046F2B1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		484374831E869E030046F2B1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		484374861E869FE60046F2B1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		484374891E86A1BD0046F2B1 /* SignUpNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpNetworkTask.swift; sourceTree = "<group>"; };
+		4843748C1E86AE200046F2B1 /* LoginNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworkTask.swift; sourceTree = "<group>"; };
+		4843748E1E86AE5C0046F2B1 /* NetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		484374901E86B63C0046F2B1 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		484374921E86B6E10046F2B1 /* Aileron-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-Black.otf"; sourceTree = "<group>"; };
+		484374931E86B6E10046F2B1 /* Aileron-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-BlackItalic.otf"; sourceTree = "<group>"; };
+		484374941E86B6E10046F2B1 /* Aileron-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-Bold.otf"; sourceTree = "<group>"; };
+		484374951E86B6E10046F2B1 /* Aileron-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-BoldItalic.otf"; sourceTree = "<group>"; };
+		484374961E86B6E10046F2B1 /* Aileron-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-Heavy.otf"; sourceTree = "<group>"; };
+		484374971E86B6E10046F2B1 /* Aileron-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-HeavyItalic.otf"; sourceTree = "<group>"; };
+		484374981E86B6E10046F2B1 /* Aileron-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-Italic.otf"; sourceTree = "<group>"; };
+		484374991E86B6E10046F2B1 /* Aileron-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-Light.otf"; sourceTree = "<group>"; };
+		4843749A1E86B6E10046F2B1 /* Aileron-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-LightItalic.otf"; sourceTree = "<group>"; };
+		4843749B1E86B6E10046F2B1 /* Aileron-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-Regular.otf"; sourceTree = "<group>"; };
+		4843749C1E86B6E10046F2B1 /* Aileron-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-SemiBold.otf"; sourceTree = "<group>"; };
+		4843749D1E86B6E10046F2B1 /* Aileron-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		4843749E1E86B6E10046F2B1 /* Aileron-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-Thin.otf"; sourceTree = "<group>"; };
+		4843749F1E86B6E10046F2B1 /* Aileron-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-ThinItalic.otf"; sourceTree = "<group>"; };
+		484374A01E86B6E10046F2B1 /* Aileron-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-UltraLight.otf"; sourceTree = "<group>"; };
+		484374A11E86B6E10046F2B1 /* Aileron-UltraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-UltraLightItalic.otf"; sourceTree = "<group>"; };
+		484374A21E86B6E10046F2B1 /* Alegreya-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Black.otf"; sourceTree = "<group>"; };
+		484374A31E86B6E10046F2B1 /* Alegreya-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-BlackItalic.otf"; sourceTree = "<group>"; };
+		484374A41E86B6E10046F2B1 /* Alegreya-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Bold.otf"; sourceTree = "<group>"; };
+		484374A51E86B6E10046F2B1 /* Alegreya-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-BoldItalic.otf"; sourceTree = "<group>"; };
+		484374A61E86B6E10046F2B1 /* Alegreya-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Italic.otf"; sourceTree = "<group>"; };
+		484374A71E86B6E10046F2B1 /* Alegreya-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Regular.otf"; sourceTree = "<group>"; };
+		4868BE221E86C57300786DDC /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		4868BE251E86C8B300786DDC /* ConversationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConversationTableViewCell.xib; sourceTree = "<group>"; };
+		4868BE271E86CD0D00786DDC /* ConversationTableViewCellDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCellDecorator.swift; sourceTree = "<group>"; };
+		4868BE291E86CD4900786DDC /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		4868BE2B1E86CD5700786DDC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4868BE2E1E86D37600786DDC /* BadgeSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeSwift.swift; sourceTree = "<group>"; };
+		48879B8A1E87B2AE009BFF9B /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		48879B8E1E87B9C1009BFF9B /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		48879B901E87B9C1009BFF9B /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		48879B921E87B9C1009BFF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E67DC61E86F2CF00F4C483 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4843743F1E8684F50046F2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484374531E8684F60046F2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4843745E1E8684F60046F2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		483EAA6C1E87117D00194600 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				484374791E868D330046F2B1 /* ConversationTableViewCell.swift */,
+				4868BE251E86C8B300786DDC /* ConversationTableViewCell.xib */,
+				483EAA6D1E87118400194600 /* Decorators */,
+				483EAA6A1E87103300194600 /* MessageCollectionViewCell.swift */,
+				483EAA6E1E8711FB00194600 /* SenderMessageCollectionViewCell.xib */,
+				483EAA701E87120A00194600 /* ReceiverMessageCollectionViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		483EAA6D1E87118400194600 /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				4868BE271E86CD0D00786DDC /* ConversationTableViewCellDecorator.swift */,
+				483EAA681E870E7200194600 /* MessageCollectionViewCellDecorator.swift */,
+			);
+			name = Decorators;
+			sourceTree = "<group>";
+		};
+		484374391E8684F50046F2B1 = {
+			isa = PBXGroup;
+			children = (
+				484374441E8684F60046F2B1 /* The Blue Cage */,
+				484374591E8684F60046F2B1 /* The Blue CageTests */,
+				484374641E8684F60046F2B1 /* The Blue CageUITests */,
+				48879B8F1E87B9C1009BFF9B /* Stickers */,
+				484374431E8684F60046F2B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		484374431E8684F60046F2B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				484374421E8684F60046F2B1 /* The Blue Cage.app */,
+				484374561E8684F60046F2B1 /* The Blue CageTests.xctest */,
+				484374611E8684F60046F2B1 /* The Blue CageUITests.xctest */,
+				48879B8E1E87B9C1009BFF9B /* Stickers.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		484374441E8684F60046F2B1 /* The Blue Cage */ = {
+			isa = PBXGroup;
+			children = (
+				484374A81E86B6E50046F2B1 /* Fonts */,
+				484374451E8684F60046F2B1 /* AppDelegate.swift */,
+				4843744C1E8684F60046F2B1 /* Assets.xcassets */,
+				484374511E8684F60046F2B1 /* Info.plist */,
+				4843744E1E8684F60046F2B1 /* LaunchScreen.storyboard */,
+				484374491E8684F60046F2B1 /* Main.storyboard */,
+				4868BE2D1E86D36C00786DDC /* Views */,
+				484374881E86A01B0046F2B1 /* Models */,
+				484374851E869FD70046F2B1 /* View Controllers */,
+				4843748B1E86A1C30046F2B1 /* Networking */,
+				484374901E86B63C0046F2B1 /* KeyboardManager.swift */,
+				4868BE241E86C57B00786DDC /* Extensions */,
+			);
+			path = "The Blue Cage";
+			sourceTree = "<group>";
+		};
+		484374591E8684F60046F2B1 /* The Blue CageTests */ = {
+			isa = PBXGroup;
+			children = (
+				4843745A1E8684F60046F2B1 /* The_Blue_CageTests.swift */,
+				4843745C1E8684F60046F2B1 /* Info.plist */,
+			);
+			path = "The Blue CageTests";
+			sourceTree = "<group>";
+		};
+		484374641E8684F60046F2B1 /* The Blue CageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				484374651E8684F60046F2B1 /* The_Blue_CageUITests.swift */,
+				484374671E8684F60046F2B1 /* Info.plist */,
+			);
+			path = "The Blue CageUITests";
+			sourceTree = "<group>";
+		};
+		484374851E869FD70046F2B1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4843747D1E868EBC0046F2B1 /* AddConversationViewController.swift */,
+				484374731E8687710046F2B1 /* ConversationListViewController.swift */,
+				484374751E8688B00046F2B1 /* ConversationViewController.swift */,
+				484374771E8689210046F2B1 /* ConversationViewController.xib */,
+				4843747B1E868E690046F2B1 /* SettingsViewController.swift */,
+				484374831E869E030046F2B1 /* LoginViewController.swift */,
+				484374811E869D3D0046F2B1 /* SignUpViewController.swift */,
+				4843747F1E869D070046F2B1 /* WelcomeViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		484374881E86A01B0046F2B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				484374861E869FE60046F2B1 /* User.swift */,
+				4868BE291E86CD4900786DDC /* Conversation.swift */,
+				4868BE2B1E86CD5700786DDC /* Message.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4843748B1E86A1C30046F2B1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				484374891E86A1BD0046F2B1 /* SignUpNetworkTask.swift */,
+				4843748C1E86AE200046F2B1 /* LoginNetworkTask.swift */,
+				4843748E1E86AE5C0046F2B1 /* NetworkTask.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		484374A81E86B6E50046F2B1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				484374921E86B6E10046F2B1 /* Aileron-Black.otf */,
+				484374931E86B6E10046F2B1 /* Aileron-BlackItalic.otf */,
+				484374941E86B6E10046F2B1 /* Aileron-Bold.otf */,
+				484374951E86B6E10046F2B1 /* Aileron-BoldItalic.otf */,
+				484374961E86B6E10046F2B1 /* Aileron-Heavy.otf */,
+				484374971E86B6E10046F2B1 /* Aileron-HeavyItalic.otf */,
+				484374981E86B6E10046F2B1 /* Aileron-Italic.otf */,
+				484374991E86B6E10046F2B1 /* Aileron-Light.otf */,
+				4843749A1E86B6E10046F2B1 /* Aileron-LightItalic.otf */,
+				4843749B1E86B6E10046F2B1 /* Aileron-Regular.otf */,
+				4843749C1E86B6E10046F2B1 /* Aileron-SemiBold.otf */,
+				4843749D1E86B6E10046F2B1 /* Aileron-SemiBoldItalic.otf */,
+				4843749E1E86B6E10046F2B1 /* Aileron-Thin.otf */,
+				4843749F1E86B6E10046F2B1 /* Aileron-ThinItalic.otf */,
+				484374A01E86B6E10046F2B1 /* Aileron-UltraLight.otf */,
+				484374A11E86B6E10046F2B1 /* Aileron-UltraLightItalic.otf */,
+				484374A21E86B6E10046F2B1 /* Alegreya-Black.otf */,
+				484374A31E86B6E10046F2B1 /* Alegreya-BlackItalic.otf */,
+				484374A41E86B6E10046F2B1 /* Alegreya-Bold.otf */,
+				484374A51E86B6E10046F2B1 /* Alegreya-BoldItalic.otf */,
+				484374A61E86B6E10046F2B1 /* Alegreya-Italic.otf */,
+				484374A71E86B6E10046F2B1 /* Alegreya-Regular.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		4868BE241E86C57B00786DDC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4868BE221E86C57300786DDC /* CGRect.swift */,
+				48E67DC61E86F2CF00F4C483 /* DateFormatter.swift */,
+				48879B8A1E87B2AE009BFF9B /* UIColor.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4868BE2D1E86D36C00786DDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4868BE2E1E86D37600786DDC /* BadgeSwift.swift */,
+				483EAA6C1E87117D00194600 /* Cells */,
+				483EAA621E86FC4400194600 /* RefreshButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		48879B8F1E87B9C1009BFF9B /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				48879B901E87B9C1009BFF9B /* Stickers.xcassets */,
+				48879B921E87B9C1009BFF9B /* Info.plist */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		484374411E8684F50046F2B1 /* The Blue Cage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4843746A1E8684F60046F2B1 /* Build configuration list for PBXNativeTarget "The Blue Cage" */;
+			buildPhases = (
+				4843743E1E8684F50046F2B1 /* Sources */,
+				4843743F1E8684F50046F2B1 /* Frameworks */,
+				484374401E8684F50046F2B1 /* Resources */,
+				48879B991E87B9C1009BFF9B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48879B941E87B9C1009BFF9B /* PBXTargetDependency */,
+			);
+			name = "The Blue Cage";
+			productName = "The Blue Cage";
+			productReference = 484374421E8684F60046F2B1 /* The Blue Cage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		484374551E8684F60046F2B1 /* The Blue CageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4843746D1E8684F60046F2B1 /* Build configuration list for PBXNativeTarget "The Blue CageTests" */;
+			buildPhases = (
+				484374521E8684F60046F2B1 /* Sources */,
+				484374531E8684F60046F2B1 /* Frameworks */,
+				484374541E8684F60046F2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				484374581E8684F60046F2B1 /* PBXTargetDependency */,
+			);
+			name = "The Blue CageTests";
+			productName = "The Blue CageTests";
+			productReference = 484374561E8684F60046F2B1 /* The Blue CageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		484374601E8684F60046F2B1 /* The Blue CageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484374701E8684F60046F2B1 /* Build configuration list for PBXNativeTarget "The Blue CageUITests" */;
+			buildPhases = (
+				4843745D1E8684F60046F2B1 /* Sources */,
+				4843745E1E8684F60046F2B1 /* Frameworks */,
+				4843745F1E8684F60046F2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				484374631E8684F60046F2B1 /* PBXTargetDependency */,
+			);
+			name = "The Blue CageUITests";
+			productName = "The Blue CageUITests";
+			productReference = 484374611E8684F60046F2B1 /* The Blue CageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		48879B8D1E87B9C1009BFF9B /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48879B961E87B9C1009BFF9B /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				48879B8C1E87B9C1009BFF9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = 48879B8E1E87B9C1009BFF9B /* Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4843743A1E8684F50046F2B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Feef Anthony";
+				TargetAttributes = {
+					484374411E8684F50046F2B1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 239483289D;
+						ProvisioningStyle = Automatic;
+					};
+					484374551E8684F60046F2B1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 484374411E8684F50046F2B1;
+					};
+					484374601E8684F60046F2B1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 484374411E8684F50046F2B1;
+					};
+					48879B8D1E87B9C1009BFF9B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 239483289D;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4843743D1E8684F50046F2B1 /* Build configuration list for PBXProject "The Blue Cage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 484374391E8684F50046F2B1;
+			productRefGroup = 484374431E8684F60046F2B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				484374411E8684F50046F2B1 /* The Blue Cage */,
+				484374551E8684F60046F2B1 /* The Blue CageTests */,
+				484374601E8684F60046F2B1 /* The Blue CageUITests */,
+				48879B8D1E87B9C1009BFF9B /* Stickers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		484374401E8684F50046F2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4868BE261E86C8B300786DDC /* ConversationTableViewCell.xib in Resources */,
+				484374501E8684F60046F2B1 /* LaunchScreen.storyboard in Resources */,
+				484374781E8689210046F2B1 /* ConversationViewController.xib in Resources */,
+				4843744D1E8684F60046F2B1 /* Assets.xcassets in Resources */,
+				483EAA711E87120A00194600 /* ReceiverMessageCollectionViewCell.xib in Resources */,
+				483EAA6F1E8711FB00194600 /* SenderMessageCollectionViewCell.xib in Resources */,
+				4843744B1E8684F60046F2B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484374541E8684F60046F2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4843745F1E8684F60046F2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48879B8C1E87B9C1009BFF9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48879B911E87B9C1009BFF9B /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4843743E1E8684F50046F2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4843747E1E868EBC0046F2B1 /* AddConversationViewController.swift in Sources */,
+				483EAA631E86FC4400194600 /* RefreshButton.swift in Sources */,
+				4843747A1E868D330046F2B1 /* ConversationTableViewCell.swift in Sources */,
+				484374821E869D3D0046F2B1 /* SignUpViewController.swift in Sources */,
+				4868BE2C1E86CD5700786DDC /* Message.swift in Sources */,
+				484374461E8684F60046F2B1 /* AppDelegate.swift in Sources */,
+				483EAA6B1E87103300194600 /* MessageCollectionViewCell.swift in Sources */,
+				48E67DC71E86F2CF00F4C483 /* DateFormatter.swift in Sources */,
+				4868BE281E86CD0D00786DDC /* ConversationTableViewCellDecorator.swift in Sources */,
+				484374741E8687710046F2B1 /* ConversationListViewController.swift in Sources */,
+				484374841E869E030046F2B1 /* LoginViewController.swift in Sources */,
+				4843747C1E868E690046F2B1 /* SettingsViewController.swift in Sources */,
+				4868BE231E86C57300786DDC /* CGRect.swift in Sources */,
+				48879B8B1E87B2AE009BFF9B /* UIColor.swift in Sources */,
+				484374761E8688B00046F2B1 /* ConversationViewController.swift in Sources */,
+				4843748D1E86AE200046F2B1 /* LoginNetworkTask.swift in Sources */,
+				4868BE2A1E86CD4900786DDC /* Conversation.swift in Sources */,
+				4868BE2F1E86D37600786DDC /* BadgeSwift.swift in Sources */,
+				4843748F1E86AE5C0046F2B1 /* NetworkTask.swift in Sources */,
+				4843748A1E86A1BD0046F2B1 /* SignUpNetworkTask.swift in Sources */,
+				484374871E869FE60046F2B1 /* User.swift in Sources */,
+				484374911E86B63C0046F2B1 /* KeyboardManager.swift in Sources */,
+				484374801E869D070046F2B1 /* WelcomeViewController.swift in Sources */,
+				483EAA691E870E7200194600 /* MessageCollectionViewCellDecorator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484374521E8684F60046F2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4843745B1E8684F60046F2B1 /* The_Blue_CageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4843745D1E8684F60046F2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484374661E8684F60046F2B1 /* The_Blue_CageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		484374581E8684F60046F2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 484374411E8684F50046F2B1 /* The Blue Cage */;
+			targetProxy = 484374571E8684F60046F2B1 /* PBXContainerItemProxy */;
+		};
+		484374631E8684F60046F2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 484374411E8684F50046F2B1 /* The Blue Cage */;
+			targetProxy = 484374621E8684F60046F2B1 /* PBXContainerItemProxy */;
+		};
+		48879B941E87B9C1009BFF9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48879B8D1E87B9C1009BFF9B /* Stickers */;
+			targetProxy = 48879B931E87B9C1009BFF9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		484374491E8684F60046F2B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4843744A1E8684F60046F2B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4843744E1E8684F60046F2B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4843744F1E8684F60046F2B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		484374681E8684F60046F2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		484374691E8684F60046F2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4843746B1E8684F60046F2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 239483289D;
+				INFOPLIST_FILE = "The Blue Cage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Feef.Anthony.The-Blue-Cage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4843746C1E8684F60046F2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 239483289D;
+				INFOPLIST_FILE = "The Blue Cage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Feef.Anthony.The-Blue-Cage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4843746E1E8684F60046F2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The Blue CageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Feef.Anthony.The-Blue-CageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Blue Cage.app/The Blue Cage";
+			};
+			name = Debug;
+		};
+		4843746F1E8684F60046F2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The Blue CageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Feef.Anthony.The-Blue-CageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Blue Cage.app/The Blue Cage";
+			};
+			name = Release;
+		};
+		484374711E8684F60046F2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "The Blue CageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Feef.Anthony.The-Blue-CageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "The Blue Cage";
+			};
+			name = Debug;
+		};
+		484374721E8684F60046F2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "The Blue CageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Feef.Anthony.The-Blue-CageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "The Blue Cage";
+			};
+			name = Release;
+		};
+		48879B971E87B9C1009BFF9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 239483289D;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Feef.Anthony.The-Blue-Cage.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		48879B981E87B9C1009BFF9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 239483289D;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Feef.Anthony.The-Blue-Cage.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4843743D1E8684F50046F2B1 /* Build configuration list for PBXProject "The Blue Cage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484374681E8684F60046F2B1 /* Debug */,
+				484374691E8684F60046F2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4843746A1E8684F60046F2B1 /* Build configuration list for PBXNativeTarget "The Blue Cage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4843746B1E8684F60046F2B1 /* Debug */,
+				4843746C1E8684F60046F2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4843746D1E8684F60046F2B1 /* Build configuration list for PBXNativeTarget "The Blue CageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4843746E1E8684F60046F2B1 /* Debug */,
+				4843746F1E8684F60046F2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484374701E8684F60046F2B1 /* Build configuration list for PBXNativeTarget "The Blue CageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484374711E8684F60046F2B1 /* Debug */,
+				484374721E8684F60046F2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48879B961E87B9C1009BFF9B /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48879B971E87B9C1009BFF9B /* Debug */,
+				48879B981E87B9C1009BFF9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4843743A1E8684F50046F2B1 /* Project object */;
+}

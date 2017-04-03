@@ -1,0 +1,203 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SignUpDataTask"
+provides-nominal:
+- "C13The_Blue_Cage14SignUpDataTask"
+provides-member:
+- ["C13The_Blue_Cage14SignUpDataTask", ""]
+provides-dynamic-lookup:
+- "name"
+- "email"
+- "password"
+depends-top-level:
+- !private "StringLiteralType"
+- "User"
+- "AssignmentPrecedence"
+- "String"
+- !private "NSUUID"
+- "SignUpDataTask"
+- "URLSessionDataTask"
+depends-member:
+- !private ["Ps9AnyObject", "NSUUID"]
+- !private ["Ps9AnyObject", "User"]
+- ["Ps9AnyObject", "email"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "password"]
+- ["Ps9AnyObject", "resume"]
+- !private ["Ps9AnyObject", "uuidString"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps7CVarArg", "NSUUID"]
+- !private ["Ps7CVarArg", "User"]
+- ["Ps7CVarArg", "email"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "name"]
+- ["Ps7CVarArg", "password"]
+- ["Ps7CVarArg", "resume"]
+- !private ["Ps7CVarArg", "uuidString"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "NSUUID"]
+- !private ["Ps28CustomDebugStringConvertible", "User"]
+- ["Ps28CustomDebugStringConvertible", "email"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "password"]
+- ["Ps28CustomDebugStringConvertible", "resume"]
+- !private ["Ps28CustomDebugStringConvertible", "uuidString"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "NSUUID"]
+- !private ["Ps23CustomStringConvertible", "User"]
+- ["Ps23CustomStringConvertible", "email"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "password"]
+- ["Ps23CustomStringConvertible", "resume"]
+- !private ["Ps23CustomStringConvertible", "uuidString"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "NSUUID"]
+- !private ["Ps9Equatable", "User"]
+- ["Ps9Equatable", "email"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "password"]
+- ["Ps9Equatable", "resume"]
+- !private ["Ps9Equatable", "uuidString"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "NSUUID"]
+- !private ["Ps8Hashable", "User"]
+- ["Ps8Hashable", "email"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "password"]
+- ["Ps8Hashable", "resume"]
+- !private ["Ps8Hashable", "uuidString"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "uuidString"]
+- !private ["PSo9NSCopying", "NSUUID"]
+- !private ["PSo9NSCopying", "User"]
+- ["PSo9NSCopying", "email"]
+- ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "name"]
+- ["PSo9NSCopying", "password"]
+- ["PSo9NSCopying", "resume"]
+- !private ["PSo9NSCopying", "uuidString"]
+- ["PSo9NSCopying", ""]
+- !private ["CSo8NSObject", "NSUUID"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "User"]
+- ["CSo8NSObject", "email"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "password"]
+- ["CSo8NSObject", "resume"]
+- !private ["CSo8NSObject", "uuidString"]
+- !private ["PSo16NSObjectProtocol", "NSUUID"]
+- !private ["PSo16NSObjectProtocol", "User"]
+- ["PSo16NSObjectProtocol", "email"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "password"]
+- ["PSo16NSObjectProtocol", "resume"]
+- !private ["PSo16NSObjectProtocol", "uuidString"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "uuidString"]
+- ["CSo6NSUUID", "deinit"]
+- !private ["CSo6NSUUID", "init"]
+- !private ["CSo6NSUUID", "uuidString"]
+- ["Os5Never", "deinit"]
+- !private ["C13The_Blue_Cage14SignUpDataTask", "NSUUID"]
+- ["C13The_Blue_Cage14SignUpDataTask", "String"]
+- ["C13The_Blue_Cage14SignUpDataTask", "User"]
+- ["C13The_Blue_Cage14SignUpDataTask", "deinit"]
+- ["C13The_Blue_Cage14SignUpDataTask", "email"]
+- ["C13The_Blue_Cage14SignUpDataTask", "init"]
+- ["C13The_Blue_Cage14SignUpDataTask", "name"]
+- ["C13The_Blue_Cage14SignUpDataTask", "password"]
+- ["C13The_Blue_Cage14SignUpDataTask", "resume"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["SS", "deinit"]
+- ["Su", "deinit"]
+- !private ["CSo18URLSessionDataTask", "NSUUID"]
+- ["CSo18URLSessionDataTask", "String"]
+- ["CSo18URLSessionDataTask", "User"]
+- ["CSo18URLSessionDataTask", "deinit"]
+- ["CSo18URLSessionDataTask", "email"]
+- ["CSo18URLSessionDataTask", "init"]
+- ["CSo18URLSessionDataTask", "name"]
+- ["CSo18URLSessionDataTask", "password"]
+- ["CSo18URLSessionDataTask", "resume"]
+- ["CSo18URLSessionDataTask", ""]
+- !private ["CSo14URLSessionTask", "NSUUID"]
+- ["CSo14URLSessionTask", "String"]
+- ["CSo14URLSessionTask", "User"]
+- ["CSo14URLSessionTask", "email"]
+- ["CSo14URLSessionTask", "init"]
+- ["CSo14URLSessionTask", "name"]
+- ["CSo14URLSessionTask", "password"]
+- ["CSo14URLSessionTask", "resume"]
+- ["V13The_Blue_Cage4User", "deinit"]
+- !private ["V13The_Blue_Cage4User", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "uuidString"]
+- !private ["Ps9_Hashable", "NSUUID"]
+- !private ["Ps9_Hashable", "User"]
+- ["Ps9_Hashable", "email"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "name"]
+- ["Ps9_Hashable", "password"]
+- ["Ps9_Hashable", "resume"]
+- !private ["Ps9_Hashable", "uuidString"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "CSo6NSUUID"
+- "Os5Never"
+- "C13The_Blue_Cage14SignUpDataTask"
+- "Vs12StaticString"
+- "SS"
+- "Su"
+- "CSo18URLSessionDataTask"
+- "CSo14URLSessionTask"
+- "V13The_Blue_Cage4User"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "38bdc35b4e75981f0b5fa62fa79458e2"

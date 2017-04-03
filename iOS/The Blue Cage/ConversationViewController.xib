@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConversationViewController" customModule="The_Blue_Cage" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="OP0-ic-zGl" id="hcE-pt-FJt"/>
+                <outlet property="inputTextView" destination="A04-vp-w6x" id="Z2c-yq-8vz"/>
+                <outlet property="textViewContainerHeightConstraint" destination="5YX-MD-eEK" id="Laq-He-sNb"/>
+                <outlet property="textViewContainerToBottomConstraint" destination="RKW-PW-vQF" id="JNG-ic-SqW"/>
+                <outlet property="view" destination="gxm-SO-K9b" id="vs7-rh-AlF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gxm-SO-K9b">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OP0-ic-zGl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CkZ-MY-E87">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="H1O-4U-8kG"/>
+                        <outlet property="delegate" destination="-1" id="yPX-SW-EjZ"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y60-mu-IbZ">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A04-vp-w6x">
+                            <rect key="frame" x="8" y="8" width="308" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="PEi-zm-lSu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="bWw-Zg-hVr"/>
+                            </connections>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuw-NG-pQ5">
+                            <rect key="frame" x="324" y="9" width="43" height="42"/>
+                            <state key="normal" image="sendButton"/>
+                            <connections>
+                                <action selector="sendMessage" destination="-1" eventType="touchUpInside" id="nye-j5-vgJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zuw-NG-pQ5" firstAttribute="centerY" secondItem="Y60-mu-IbZ" secondAttribute="centerY" id="3B3-lb-1sx"/>
+                        <constraint firstAttribute="height" constant="60" id="5YX-MD-eEK"/>
+                        <constraint firstItem="zuw-NG-pQ5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Y60-mu-IbZ" secondAttribute="top" constant="8" id="6be-ca-04W"/>
+                        <constraint firstAttribute="bottom" secondItem="A04-vp-w6x" secondAttribute="bottom" priority="750" constant="8" id="Hvl-kx-k5z"/>
+                        <constraint firstItem="A04-vp-w6x" firstAttribute="top" secondItem="Y60-mu-IbZ" secondAttribute="top" priority="750" constant="8" id="Q2Z-Pc-Efa"/>
+                        <constraint firstItem="zuw-NG-pQ5" firstAttribute="centerY" secondItem="A04-vp-w6x" secondAttribute="centerY" id="iF7-lP-eid"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zuw-NG-pQ5" secondAttribute="bottom" constant="8" id="iZJ-NV-SUz"/>
+                        <constraint firstItem="A04-vp-w6x" firstAttribute="leading" secondItem="Y60-mu-IbZ" secondAttribute="leading" constant="8" id="jw9-Iu-N2s"/>
+                        <constraint firstAttribute="trailing" secondItem="zuw-NG-pQ5" secondAttribute="trailing" constant="8" id="svx-Dp-jVn"/>
+                        <constraint firstItem="zuw-NG-pQ5" firstAttribute="leading" secondItem="A04-vp-w6x" secondAttribute="trailing" constant="8" id="ygo-J7-Mff"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OP0-ic-zGl" secondAttribute="trailing" id="29q-CP-gyw"/>
+                <constraint firstItem="OP0-ic-zGl" firstAttribute="leading" secondItem="gxm-SO-K9b" secondAttribute="leading" id="Bor-Uf-aMn"/>
+                <constraint firstItem="OP0-ic-zGl" firstAttribute="top" secondItem="gxm-SO-K9b" secondAttribute="top" id="Qg6-Zs-0fO"/>
+                <constraint firstAttribute="bottom" secondItem="Y60-mu-IbZ" secondAttribute="bottom" id="RKW-PW-vQF"/>
+                <constraint firstItem="Y60-mu-IbZ" firstAttribute="top" secondItem="OP0-ic-zGl" secondAttribute="bottom" id="WuT-Xz-LYs"/>
+                <constraint firstAttribute="trailing" secondItem="Y60-mu-IbZ" secondAttribute="trailing" id="hVT-uM-i41"/>
+                <constraint firstItem="Y60-mu-IbZ" firstAttribute="leading" secondItem="gxm-SO-K9b" secondAttribute="leading" id="rvc-pD-Yy2"/>
+            </constraints>
+            <point key="canvasLocation" x="178.5" y="471.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sendButton" width="43" height="42"/>
+    </resources>
+</document>
