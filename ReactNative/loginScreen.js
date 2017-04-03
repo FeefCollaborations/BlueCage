@@ -7,7 +7,8 @@ import {
     TouchableHighlight,
     Text,
     Keyboard,
-    DeviceEventEmitter
+    Dimensions,
+    LayoutAnimation,
 } from 'react-native';
 import NavigationBar from 'react-native-navbar';
 
@@ -22,17 +23,13 @@ export default class LoginScreen extends Component {
     this.state = {
       currentEmailText: '',
       currentPasswordText: '',
+      containerBottomInset: 0,
     };
   }
 
   componentWillMount() {
-    this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this.updateTextFieldContainer.bind(this));
-    this.keyboardWillHideListener = Keyboard.addListener('keyboardWillHide', this.updateTextFieldContainer.bind(this));
-  }
-
-  componentWillUnmount() {
-    this.keyboardDidShowListener.remove()
-    this.keyboardDidHideListener.remove()
+    Keyboard.addListener('keyboardWillShow', ((keyboard) => this.expandContainer(false, keyboard)));
+    Keyboard.addListener('keyboardWillHide', ((keyboard) => this.expandContainer(true, keyboard)));
   }
 
   render() {
@@ -52,18 +49,32 @@ export default class LoginScreen extends Component {
               title: 'Back',
               handler: () => this.props.navigator.pop(),
         }}/>
-        <View style={styles.textFieldContainer}>
+        <View style={styles.interactiveViewsContainer} bottom={this.state.containerBottomInset}>
           <TextInput
-            style={styles.textField}
+            style={[styles.textArea, styles.textAreaContainer]}
             placeholder='Email'
           onChangeText={(text) => { this.updateEmailText(text) }}/>
           <TextInput
-            style={styles.textField}
+            style={[styles.textArea, styles.textAreaContainer]}
             placeholder='Password'
           onChangeText={(text) => { this.updatePasswordText(text) }}/>
+          <TouchableHighlight style={styles.textAreaContainer} underlayColor='transparent' onPress={this.attemptLogin}>
+            <Text style={styles.textArea}>Login</Text>
+          </TouchableHighlight>
         </View>
       </View>
     );
+  }
+
+  expandContainer(expand, keyboard) {
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    var state = this.state;
+    state.containerBottomInset = expand ? 0 : keyboard.endCoordinates.height / 2;
+    this.setState(state);
+  }
+
+  attemptLogin() {
+    // TODO: Show "loading" alert, send off network request to validate account info, and respond to response appropriately
   }
 
   updateEmailText(text) {
@@ -77,10 +88,6 @@ export default class LoginScreen extends Component {
     state.currentPasswordText = text;
     this.setState(state);
   }
-
-  updateTextFieldContainer() {
-    console.log('yes');
-  }
 };
 
 const styles = StyleSheet.create({
@@ -89,7 +96,7 @@ const styles = StyleSheet.create({
       flexDirection:'column',
       backgroundColor:'white',
     },
-    textFieldContainer: {
+    interactiveViewsContainer: {
       flex:1,
       flexDirection:'column',
       justifyContent:'center',
@@ -97,10 +104,13 @@ const styles = StyleSheet.create({
     navbarStyle: {
       backgroundColor:'black',
     },
-    textField: {
+    textArea: {
       height: 30,
       textAlign: 'center',
     },
+    textAreaContainer: {
+      marginVertical: 20,
+    }
 });
 
 
