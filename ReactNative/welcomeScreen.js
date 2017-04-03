@@ -2,42 +2,77 @@ import React, { Component } from 'react';
 import {
     AppRegistry,
     Text,
-    Button,
+    TouchableHighlight,
     View,
     NavbarButton,
-    StyleSheet
+    StyleSheet,
+    Image
 } from 'react-native';
+import signUpScreen from './signUpScreen';
+import loginScreen from './loginScreen';
+import NavigationBar from 'react-native-navbar';
+
+const Constants = {
+  buttonOuterMargin: 51,
+  buttonInnerMargin: 44,
+  blueCageIcon: require('./images/BlueCageLogo.png'),
+}
 
 export default class WelcomeScreen extends Component {
+
   render() {
     return (
       <View style={styles.rootView}>
-        <View style={styles.container}>
-          <Button style={styles.button} title='yeahhhh'onPress={this.onPress}></Button>
-          <Button style={styles.button} title='yeahhhh'onPress={this.onPress}></Button>
+        <NavigationBar
+          statusBar={{
+            tintColor:'white',
+            style:'default',
+        }}/>
+        <View style={styles.imageContainer}>
+          <Image source={Constants.blueCageIcon}/>
         </View>
+        <TouchableHighlight style={[styles.button, styles.topButton]} onPress={() => this.onPress(signUpScreen)}>
+          <Text style={styles.text}>Sign Up</Text>
+        </TouchableHighlight>
+        <TouchableHighlight style={[styles.button, styles.bottomButton]} onPress={() => this.onPress(loginScreen)}>
+          <Text style={styles.text}>Log In</Text>
+        </TouchableHighlight>
       </View>
     );
   }
 
-  onPress() {
-  
+  onPress(component) {
+    this.props.navigator.push({
+      component: component
+    });
   }
 };
 
 const styles = StyleSheet.create({
     rootView: {
       flex:1,
+      flexDirection:'column',
     },
-    container: {
-      flex:1,
-      flexDirection:'column-reverse',
-      height:100,
+    text: {
+      textAlign:'center',
+      color:'white',
+    },
+    topButton: {
+      marginBottom: Constants.buttonInnerMargin,
+    },
+    bottomButton: {
+      marginBottom: Constants.buttonOuterMargin
     },
     button: {
-      height:100,
-      marginBottom: 1000,
+      justifyContent:'center',
+      backgroundColor:'black',
+      height:56,
     },
+    imageContainer: {
+      flex:1,
+      justifyContent:'center',
+      alignItems:'center',
+    }
 });
 
 AppRegistry.registerComponent('WelcomeScreen', () => WelcomeScreen);

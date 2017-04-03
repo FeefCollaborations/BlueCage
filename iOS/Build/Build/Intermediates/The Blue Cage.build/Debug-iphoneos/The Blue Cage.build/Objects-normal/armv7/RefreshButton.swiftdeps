@@ -1,0 +1,517 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RefreshButton"
+- "=="
+provides-nominal:
+- "C13The_Blue_Cage13RefreshButton"
+- "OC13The_Blue_Cage13RefreshButton5State"
+provides-member:
+- ["C13The_Blue_Cage13RefreshButton", ""]
+- ["OC13The_Blue_Cage13RefreshButton5State", ""]
+provides-dynamic-lookup:
+- "new"
+- "toggleState"
+depends-top-level:
+- "TernaryPrecedence"
+- "AssignmentPrecedence"
+- "=="
+- "RefreshButton"
+- "Selector"
+- "UIBarButtonItem"
+- !private "!="
+- "UIView"
+- "UIActivityIndicatorView"
+depends-member:
+- !private ["Ps9AnyObject", "RefreshButton"]
+- ["Ps9AnyObject", "UIActivityIndicatorView"]
+- !private ["Ps9AnyObject", "UIView"]
+- ["Ps9AnyObject", "activityIndicator"]
+- ["Ps9AnyObject", "activityIndicatorContainer"]
+- ["Ps9AnyObject", "activityIndicatorContainer.storage"]
+- !private ["Ps9AnyObject", "addSubview"]
+- ["Ps9AnyObject", "color"]
+- !private ["Ps9AnyObject", "customView"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "new"]
+- ["Ps9AnyObject", "startAnimating"]
+- ["Ps9AnyObject", "state"]
+- ["Ps9AnyObject", "toggleState"]
+- ["Ps9AnyObject", "update"]
+- ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "addSubview"]
+- ["PSo15CALayerDelegate", "color"]
+- !private ["PSo15CALayerDelegate", "frame"]
+- ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "startAnimating"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps7CVarArg", "RefreshButton"]
+- ["Ps7CVarArg", "UIActivityIndicatorView"]
+- !private ["Ps7CVarArg", "UIView"]
+- ["Ps7CVarArg", "activityIndicator"]
+- ["Ps7CVarArg", "activityIndicatorContainer"]
+- ["Ps7CVarArg", "activityIndicatorContainer.storage"]
+- !private ["Ps7CVarArg", "addSubview"]
+- ["Ps7CVarArg", "color"]
+- !private ["Ps7CVarArg", "customView"]
+- !private ["Ps7CVarArg", "frame"]
+- !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "new"]
+- ["Ps7CVarArg", "startAnimating"]
+- ["Ps7CVarArg", "state"]
+- ["Ps7CVarArg", "toggleState"]
+- ["Ps7CVarArg", "update"]
+- ["Ps7CVarArg", "white"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps28CustomDebugStringConvertible", "RefreshButton"]
+- ["Ps28CustomDebugStringConvertible", "UIActivityIndicatorView"]
+- !private ["Ps28CustomDebugStringConvertible", "UIView"]
+- ["Ps28CustomDebugStringConvertible", "activityIndicator"]
+- ["Ps28CustomDebugStringConvertible", "activityIndicatorContainer"]
+- ["Ps28CustomDebugStringConvertible", "activityIndicatorContainer.storage"]
+- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- ["Ps28CustomDebugStringConvertible", "color"]
+- !private ["Ps28CustomDebugStringConvertible", "customView"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "new"]
+- !private ["Ps28CustomDebugStringConvertible", "refreshing"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- ["Ps28CustomDebugStringConvertible", "startAnimating"]
+- ["Ps28CustomDebugStringConvertible", "state"]
+- ["Ps28CustomDebugStringConvertible", "toggleState"]
+- ["Ps28CustomDebugStringConvertible", "update"]
+- ["Ps28CustomDebugStringConvertible", "white"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- !private ["Ps17CustomReflectable", "refreshing"]
+- !private ["Ps17CustomReflectable", "size"]
+- ["Ps17CustomReflectable", "white"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "RefreshButton"]
+- ["Ps23CustomStringConvertible", "UIActivityIndicatorView"]
+- !private ["Ps23CustomStringConvertible", "UIView"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "activityIndicator"]
+- ["Ps23CustomStringConvertible", "activityIndicatorContainer"]
+- ["Ps23CustomStringConvertible", "activityIndicatorContainer.storage"]
+- !private ["Ps23CustomStringConvertible", "addSubview"]
+- ["Ps23CustomStringConvertible", "color"]
+- !private ["Ps23CustomStringConvertible", "customView"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "new"]
+- ["Ps23CustomStringConvertible", "startAnimating"]
+- ["Ps23CustomStringConvertible", "state"]
+- ["Ps23CustomStringConvertible", "toggleState"]
+- ["Ps23CustomStringConvertible", "update"]
+- ["Ps23CustomStringConvertible", "white"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "RefreshButton"]
+- ["Ps9Equatable", "UIActivityIndicatorView"]
+- !private ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "activityIndicator"]
+- ["Ps9Equatable", "activityIndicatorContainer"]
+- ["Ps9Equatable", "activityIndicatorContainer.storage"]
+- !private ["Ps9Equatable", "addSubview"]
+- ["Ps9Equatable", "color"]
+- !private ["Ps9Equatable", "customView"]
+- !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "interactive"]
+- ["Ps9Equatable", "new"]
+- !private ["Ps9Equatable", "refresh"]
+- !private ["Ps9Equatable", "refreshing"]
+- !private ["Ps9Equatable", "size"]
+- ["Ps9Equatable", "startAnimating"]
+- ["Ps9Equatable", "state"]
+- ["Ps9Equatable", "toggleState"]
+- ["Ps9Equatable", "update"]
+- ["Ps9Equatable", "white"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps23ExpressibleByNilLiteral", "refreshing"]
+- ["Ps23ExpressibleByNilLiteral", "white"]
+- !private ["Ps8Hashable", "RefreshButton"]
+- ["Ps8Hashable", "UIActivityIndicatorView"]
+- !private ["Ps8Hashable", "UIView"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "activityIndicator"]
+- ["Ps8Hashable", "activityIndicatorContainer"]
+- ["Ps8Hashable", "activityIndicatorContainer.storage"]
+- !private ["Ps8Hashable", "addSubview"]
+- ["Ps8Hashable", "color"]
+- !private ["Ps8Hashable", "customView"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "interactive"]
+- ["Ps8Hashable", "new"]
+- !private ["Ps8Hashable", "refresh"]
+- !private ["Ps8Hashable", "refreshing"]
+- ["Ps8Hashable", "startAnimating"]
+- ["Ps8Hashable", "state"]
+- ["Ps8Hashable", "toggleState"]
+- ["Ps8Hashable", "update"]
+- ["Ps8Hashable", "white"]
+- ["Ps8Hashable", ""]
+- ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "RefreshButton"]
+- ["PSo8NSCoding", "UIActivityIndicatorView"]
+- !private ["PSo8NSCoding", "UIView"]
+- ["PSo8NSCoding", "activityIndicator"]
+- ["PSo8NSCoding", "activityIndicatorContainer"]
+- ["PSo8NSCoding", "activityIndicatorContainer.storage"]
+- !private ["PSo8NSCoding", "addSubview"]
+- ["PSo8NSCoding", "color"]
+- !private ["PSo8NSCoding", "customView"]
+- !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "new"]
+- ["PSo8NSCoding", "startAnimating"]
+- ["PSo8NSCoding", "state"]
+- ["PSo8NSCoding", "toggleState"]
+- ["PSo8NSCoding", "update"]
+- ["PSo8NSCoding", "white"]
+- ["PSo8NSCoding", ""]
+- ["PSo9NSCopying", "white"]
+- ["CSo8NSObject", "RefreshButton"]
+- ["CSo8NSObject", "Selector"]
+- ["CSo8NSObject", "State"]
+- ["CSo8NSObject", "UIActivityIndicatorView"]
+- ["CSo8NSObject", "UIView"]
+- ["CSo8NSObject", "activityIndicator"]
+- ["CSo8NSObject", "activityIndicatorContainer"]
+- ["CSo8NSObject", "activityIndicatorContainer.storage"]
+- !private ["CSo8NSObject", "addSubview"]
+- ["CSo8NSObject", "color"]
+- !private ["CSo8NSObject", "customView"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "new"]
+- ["CSo8NSObject", "startAnimating"]
+- ["CSo8NSObject", "state"]
+- ["CSo8NSObject", "toggleState"]
+- ["CSo8NSObject", "update"]
+- ["CSo8NSObject", "white"]
+- !private ["PSo16NSObjectProtocol", "RefreshButton"]
+- ["PSo16NSObjectProtocol", "UIActivityIndicatorView"]
+- !private ["PSo16NSObjectProtocol", "UIView"]
+- ["PSo16NSObjectProtocol", "activityIndicator"]
+- ["PSo16NSObjectProtocol", "activityIndicatorContainer"]
+- ["PSo16NSObjectProtocol", "activityIndicatorContainer.storage"]
+- !private ["PSo16NSObjectProtocol", "addSubview"]
+- ["PSo16NSObjectProtocol", "color"]
+- !private ["PSo16NSObjectProtocol", "customView"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "new"]
+- ["PSo16NSObjectProtocol", "startAnimating"]
+- ["PSo16NSObjectProtocol", "state"]
+- ["PSo16NSObjectProtocol", "toggleState"]
+- ["PSo16NSObjectProtocol", "update"]
+- ["PSo16NSObjectProtocol", "white"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "white"]
+- ["Sq", "deinit"]
+- !private ["Sq", "refreshing"]
+- ["Sq", "white"]
+- !private ["Ps16RawRepresentable", "refresh"]
+- ["C13The_Blue_Cage13RefreshButton", "RefreshButton"]
+- ["C13The_Blue_Cage13RefreshButton", "Selector"]
+- ["C13The_Blue_Cage13RefreshButton", "State"]
+- ["C13The_Blue_Cage13RefreshButton", "UIActivityIndicatorView"]
+- ["C13The_Blue_Cage13RefreshButton", "UIView"]
+- !private ["C13The_Blue_Cage13RefreshButton", "activityIndicator"]
+- !private ["C13The_Blue_Cage13RefreshButton", "activityIndicatorContainer"]
+- !private ["C13The_Blue_Cage13RefreshButton", "activityIndicatorContainer.storage"]
+- !private ["C13The_Blue_Cage13RefreshButton", "customView"]
+- ["C13The_Blue_Cage13RefreshButton", "deinit"]
+- ["C13The_Blue_Cage13RefreshButton", "init"]
+- ["C13The_Blue_Cage13RefreshButton", "new"]
+- !private ["C13The_Blue_Cage13RefreshButton", "state"]
+- ["C13The_Blue_Cage13RefreshButton", "toggleState"]
+- ["C13The_Blue_Cage13RefreshButton", "update"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- ["OC13The_Blue_Cage13RefreshButton5State", "=="]
+- ["OC13The_Blue_Cage13RefreshButton5State", "_toAnyHashable"]
+- ["OC13The_Blue_Cage13RefreshButton5State", "deinit"]
+- ["OC13The_Blue_Cage13RefreshButton5State", "hashValue"]
+- ["OC13The_Blue_Cage13RefreshButton5State", "interactive"]
+- ["OC13The_Blue_Cage13RefreshButton5State", "refreshing"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["PSo29UIAccessibilityIdentification", "RefreshButton"]
+- ["PSo29UIAccessibilityIdentification", "UIActivityIndicatorView"]
+- !private ["PSo29UIAccessibilityIdentification", "UIView"]
+- ["PSo29UIAccessibilityIdentification", "activityIndicator"]
+- ["PSo29UIAccessibilityIdentification", "activityIndicatorContainer"]
+- ["PSo29UIAccessibilityIdentification", "activityIndicatorContainer.storage"]
+- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- ["PSo29UIAccessibilityIdentification", "color"]
+- !private ["PSo29UIAccessibilityIdentification", "customView"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "new"]
+- ["PSo29UIAccessibilityIdentification", "startAnimating"]
+- ["PSo29UIAccessibilityIdentification", "state"]
+- ["PSo29UIAccessibilityIdentification", "toggleState"]
+- ["PSo29UIAccessibilityIdentification", "update"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["CSo23UIActivityIndicatorView", "color"]
+- ["CSo23UIActivityIndicatorView", "deinit"]
+- ["CSo23UIActivityIndicatorView", "init"]
+- ["CSo23UIActivityIndicatorView", "startAnimating"]
+- !private ["PSo12UIAppearance", "RefreshButton"]
+- ["PSo12UIAppearance", "UIActivityIndicatorView"]
+- !private ["PSo12UIAppearance", "UIView"]
+- ["PSo12UIAppearance", "activityIndicator"]
+- ["PSo12UIAppearance", "activityIndicatorContainer"]
+- ["PSo12UIAppearance", "activityIndicatorContainer.storage"]
+- !private ["PSo12UIAppearance", "addSubview"]
+- ["PSo12UIAppearance", "color"]
+- !private ["PSo12UIAppearance", "customView"]
+- !private ["PSo12UIAppearance", "frame"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "new"]
+- ["PSo12UIAppearance", "startAnimating"]
+- ["PSo12UIAppearance", "state"]
+- ["PSo12UIAppearance", "toggleState"]
+- ["PSo12UIAppearance", "update"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "addSubview"]
+- ["PSo21UIAppearanceContainer", "color"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "startAnimating"]
+- ["CSo15UIBarButtonItem", "RefreshButton"]
+- ["CSo15UIBarButtonItem", "Selector"]
+- ["CSo15UIBarButtonItem", "State"]
+- ["CSo15UIBarButtonItem", "UIActivityIndicatorView"]
+- ["CSo15UIBarButtonItem", "UIView"]
+- ["CSo15UIBarButtonItem", "activityIndicator"]
+- ["CSo15UIBarButtonItem", "activityIndicatorContainer"]
+- ["CSo15UIBarButtonItem", "activityIndicatorContainer.storage"]
+- !private ["CSo15UIBarButtonItem", "customView"]
+- ["CSo15UIBarButtonItem", "deinit"]
+- ["CSo15UIBarButtonItem", "init"]
+- ["CSo15UIBarButtonItem", "new"]
+- ["CSo15UIBarButtonItem", "state"]
+- ["CSo15UIBarButtonItem", "toggleState"]
+- ["CSo15UIBarButtonItem", "update"]
+- ["CSo15UIBarButtonItem", ""]
+- ["OSC21UIBarButtonSystemItem", "deinit"]
+- !private ["OSC21UIBarButtonSystemItem", "refresh"]
+- ["CSo9UIBarItem", "RefreshButton"]
+- ["CSo9UIBarItem", "Selector"]
+- ["CSo9UIBarItem", "State"]
+- ["CSo9UIBarItem", "UIActivityIndicatorView"]
+- ["CSo9UIBarItem", "UIView"]
+- ["CSo9UIBarItem", "activityIndicator"]
+- ["CSo9UIBarItem", "activityIndicatorContainer"]
+- ["CSo9UIBarItem", "activityIndicatorContainer.storage"]
+- !private ["CSo9UIBarItem", "customView"]
+- ["CSo9UIBarItem", "init"]
+- ["CSo9UIBarItem", "new"]
+- ["CSo9UIBarItem", "state"]
+- ["CSo9UIBarItem", "toggleState"]
+- ["CSo9UIBarItem", "update"]
+- ["CSo7UIColor", "white"]
+- !private ["PSo17UICoordinateSpace", "addSubview"]
+- ["PSo17UICoordinateSpace", "color"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "startAnimating"]
+- !private ["PSo13UIDynamicItem", "addSubview"]
+- ["PSo13UIDynamicItem", "color"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "startAnimating"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- ["PSo18UIFocusEnvironment", "color"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "startAnimating"]
+- !private ["PSo11UIFocusItem", "addSubview"]
+- ["PSo11UIFocusItem", "color"]
+- !private ["PSo11UIFocusItem", "frame"]
+- ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "startAnimating"]
+- !private ["CSo11UIResponder", "addSubview"]
+- ["CSo11UIResponder", "color"]
+- !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "startAnimating"]
+- !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- ["PSo30UIResponderStandardEditActions", "color"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "startAnimating"]
+- !private ["PSo18UITraitEnvironment", "addSubview"]
+- ["PSo18UITraitEnvironment", "color"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "startAnimating"]
+- !private ["CSo6UIView", "addSubview"]
+- ["CSo6UIView", "color"]
+- !private ["CSo6UIView", "deinit"]
+- !private ["CSo6UIView", "frame"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "startAnimating"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "color"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "startAnimating"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- ["Ps26_ExpressibleByColorLiteral", "white"]
+- !private ["Ps9_Hashable", "RefreshButton"]
+- ["Ps9_Hashable", "UIActivityIndicatorView"]
+- !private ["Ps9_Hashable", "UIView"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "activityIndicator"]
+- ["Ps9_Hashable", "activityIndicatorContainer"]
+- ["Ps9_Hashable", "activityIndicatorContainer.storage"]
+- !private ["Ps9_Hashable", "addSubview"]
+- ["Ps9_Hashable", "color"]
+- !private ["Ps9_Hashable", "customView"]
+- !private ["Ps9_Hashable", "frame"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "interactive"]
+- ["Ps9_Hashable", "new"]
+- !private ["Ps9_Hashable", "refresh"]
+- !private ["Ps9_Hashable", "refreshing"]
+- ["Ps9_Hashable", "startAnimating"]
+- ["Ps9_Hashable", "state"]
+- ["Ps9_Hashable", "toggleState"]
+- ["Ps9_Hashable", "update"]
+- ["Ps9_Hashable", "white"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "refreshing"]
+- !private ["Ps21_ObjectiveCBridgeable", "size"]
+- ["Ps21_ObjectiveCBridgeable", "white"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Vs26_OptionalNilComparisonType", "refreshing"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "PSo15CALayerDelegate"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- "Ps8Hashable"
+- "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- "C13The_Blue_Cage13RefreshButton"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- "OC13The_Blue_Cage13RefreshButton5State"
+- !private "Ps10Strideable"
+- "PSo29UIAccessibilityIdentification"
+- "CSo23UIActivityIndicatorView"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo15UIBarButtonItem"
+- "OSC21UIBarButtonSystemItem"
+- "CSo9UIBarItem"
+- "CSo7UIColor"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/GameplayKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+interface-hash: "a4aa1d11aedf65b37463973b3c78f8ef"
