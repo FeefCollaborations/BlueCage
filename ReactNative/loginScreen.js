@@ -11,28 +11,16 @@ import {
     LayoutAnimation,
 } from 'react-native';
 import NavigationBar from 'react-native-navbar';
+import KeyboardReactiveView from './keyboardReactiveView';
 
 const constants = {
   emailPlaceholderText: 'Email',
-  passwordPlaceholderText: 'Email',
+  passwordPlaceholderText: 'Password',
 }
 
 export default class LoginScreen extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentEmailText: '',
-      currentPasswordText: '',
-      containerBottomInset: 0,
-    };
-  }
-
-  componentWillMount() {
-    Keyboard.addListener('keyboardWillShow', ((keyboard) => this.expandContainer(false, keyboard)));
-    Keyboard.addListener('keyboardWillHide', ((keyboard) => this.expandContainer(true, keyboard)));
-  }
-
   render() {
+    let interactiveViews = this.interactiveViews();
     return (
       <View style={styles.rootView}>
         <NavigationBar
@@ -49,28 +37,27 @@ export default class LoginScreen extends Component {
               title: 'Back',
               handler: () => this.props.navigator.pop(),
         }}/>
-        <View style={styles.interactiveViewsContainer} bottom={this.state.containerBottomInset}>
-          <TextInput
-            style={[styles.textArea, styles.textAreaContainer]}
-            placeholder='Email'
-          onChangeText={(text) => { this.updateEmailText(text) }}/>
-          <TextInput
-            style={[styles.textArea, styles.textAreaContainer]}
-            placeholder='Password'
-          onChangeText={(text) => { this.updatePasswordText(text) }}/>
-          <TouchableHighlight style={styles.textAreaContainer} underlayColor='transparent' onPress={this.attemptLogin}>
-            <Text style={styles.textArea}>Login</Text>
-          </TouchableHighlight>
-        </View>
+        <KeyboardReactiveView views={interactiveViews}/>
       </View>
     );
   }
 
-  expandContainer(expand, keyboard) {
-    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-    var state = this.state;
-    state.containerBottomInset = expand ? 0 : keyboard.endCoordinates.height / 2;
-    this.setState(state);
+  interactiveViews() {
+    return [
+      <TextInput
+        key='email'
+        style={[styles.textArea, styles.textAreaContainer]}
+        placeholder={constants.emailPlaceholderText}
+        onChangeText={(text) => { this.updateEmailText(text) }}/>,
+      <TextInput
+        key='password'
+        style={[styles.textArea, styles.textAreaContainer]}
+        placeholder={constants.passwordPlaceholderText}
+        onChangeText={(text) => { this.updatePasswordText(text) }}/>,
+      <TouchableHighlight key='button' style={styles.textAreaContainer} underlayColor='transparent' onPress={this.attemptLogin}>
+        <Text key='buttonText' style={styles.textArea}>Login</Text>
+      </TouchableHighlight>,
+    ];
   }
 
   attemptLogin() {
@@ -78,15 +65,11 @@ export default class LoginScreen extends Component {
   }
 
   updateEmailText(text) {
-    var state = this.state;
-    state.currentEmailText = text;
-    this.setState(state);
+    this.currentEmailText = text;
   }
 
   updatePasswordText(text) {
-    var state = this.state;
-    state.currentPasswordText = text;
-    this.setState(state);
+    this.currentPasswordText = text;
   }
 };
 
@@ -95,11 +78,6 @@ const styles = StyleSheet.create({
       flex:1,
       flexDirection:'column',
       backgroundColor:'white',
-    },
-    interactiveViewsContainer: {
-      flex:1,
-      flexDirection:'column',
-      justifyContent:'center',
     },
     navbarStyle: {
       backgroundColor:'black',
