@@ -31,10 +31,14 @@ export default class WelcomeScreen extends Component {
         <View style={styles.imageContainer}>
           <Image source={Constants.blueCageIcon}/>
         </View>
-        <TouchableHighlight style={[styles.button, styles.topButton]} onPress={() => this.onPress(signUpScreen)}>
+        <TouchableHighlight
+          style={[styles.button, styles.topButton]}
+          onPress={() => this.onPress(signUpScreen)}>
           <Text style={styles.text}>Sign Up</Text>
         </TouchableHighlight>
-        <TouchableHighlight style={[styles.button, styles.bottomButton]} onPress={() => this.onPress(loginScreen)}>
+        <TouchableHighlight
+          style={[styles.button, styles.bottomButton]}
+          onPress={() => this.onPress(loginScreen)}>
           <Text style={styles.text}>Log In</Text>
         </TouchableHighlight>
       </View>
@@ -74,5 +78,3 @@ const styles = StyleSheet.create({
       alignItems:'center',
     }
 });
-
-AppRegistry.registerComponent('WelcomeScreen', () => WelcomeScreen);
