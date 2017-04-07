@@ -12,6 +12,8 @@ import {
 } from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import KeyboardReactiveView from './keyboardReactiveView';
+import conversationsScreen from './conversationsScreen';
+import StyledNavigationBar from './styledNavigationBar';
 
 const constants = {
   emailPlaceholderText: 'Email',
@@ -23,17 +25,12 @@ export default class LoginScreen extends Component {
     let interactiveViews = this.interactiveViews();
     return (
       <View style={styles.rootView}>
-        <NavigationBar
-          statusBar={{
-            tintColor:'black',
-            style:'light-content',
-          }}
-          style={styles.navbarStyle}
-          title= {{
+        <StyledNavigationBar
+          title={{
               title: 'Log In',
               tintColor: 'white',
           }}
-          leftButton= {{
+          leftButton={{
               title: 'Back',
               handler: () => this.props.navigator.pop(),
         }}/>
@@ -54,7 +51,7 @@ export default class LoginScreen extends Component {
         style={[styles.textArea, styles.textAreaContainer]}
         placeholder={constants.passwordPlaceholderText}
         onChangeText={(text) => { this.updatePasswordText(text) }}/>,
-      <TouchableHighlight key='button' style={styles.textAreaContainer} underlayColor='transparent' onPress={this.attemptLogin}>
+      <TouchableHighlight key='button' style={styles.textAreaContainer} underlayColor='transparent' onPress={()=>this.attemptLogin()}>
         <Text key='buttonText' style={styles.textArea}>Login</Text>
       </TouchableHighlight>,
     ];
@@ -62,6 +59,9 @@ export default class LoginScreen extends Component {
 
   attemptLogin() {
     // TODO: Show "loading" alert, send off network request to validate account info, and respond to response appropriately
+    this.props.navigator.push({
+      component: conversationsScreen,
+    });
   }
 
   updateEmailText(text) {
@@ -90,6 +90,3 @@ const styles = StyleSheet.create({
       marginVertical: 20,
     }
 });
-
-
-AppRegistry.registerComponent('LoginScreen', () => LoginScreen);

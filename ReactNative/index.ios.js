@@ -17,8 +17,7 @@ export default class BlueCage extends Component {
           initialRoute={routes[0]}
           renderScene={(route, navigator) => (
               <route.component navigator={navigator}/>
-          )}
-      />
+          )}/>
     );
   }
 };

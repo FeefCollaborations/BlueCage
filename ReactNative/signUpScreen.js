@@ -12,6 +12,8 @@ import {
 } from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import KeyboardReactiveView from './keyboardReactiveView';
+import conversationsScreen from './conversationsScreen';
+import StyledNavigationBar from './styledNavigationBar';
 
 const constants = {
   namePlaceholderText: 'Name',
@@ -24,17 +26,12 @@ export default class SignUpScreen extends Component {
     let interactiveViews = this.interactiveViews();
     return (
       <View style={styles.rootView}>
-        <NavigationBar
-          statusBar={{
-            tintColor:'black',
-            style:'light-content',
-          }}
-          style={styles.navbarStyle}
-          title= {{
+        <StyledNavigationBar
+          title={{
               title: 'Sign Up',
               tintColor: 'white',
           }}
-          leftButton= {{
+          leftButton={{
               title: 'Back',
               handler: () => this.props.navigator.pop(),
         }}/>
@@ -60,14 +57,18 @@ export default class SignUpScreen extends Component {
         style={[styles.textArea, styles.textAreaContainer]}
         placeholder={constants.passwordPlaceholderText}
         onChangeText={(text) => { this.updatePasswordText(text) }}/>,
-      <TouchableHighlight key='button' style={styles.textAreaContainer} underlayColor='transparent' onPress={this.attemptLogin}>
+      <TouchableHighlight key='button' style={styles.textAreaContainer} underlayColor='transparent' onPress={()=>this.attemptLogin()}>
         <Text key='buttonText' style={styles.textArea}>Sign Up</Text>
       </TouchableHighlight>,
     ];
   }
 
   attemptLogin() {
+    console.log('trying');
     // TODO: Show "loading" alert, send off network request to validate account info, and respond to response appropriately
+    this.props.navigator.push({
+      component: conversationsScreen,
+    });
   }
 
   updateNameText(text) {
