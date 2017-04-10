@@ -3,7 +3,7 @@ import {
     AppRegistry,
     Navigator,
 } from 'react-native';
-import welcomeScreen from './welcomeScreen';
+import welcomeScreen from './app/containers/welcomeScreen';
 
 const routes = [
     {component: welcomeScreen, title: 'First Scene', index: 0},

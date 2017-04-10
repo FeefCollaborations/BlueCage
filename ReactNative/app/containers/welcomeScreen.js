@@ -15,7 +15,7 @@ import NavigationBar from 'react-native-navbar';
 const Constants = {
   buttonOuterMargin: 51,
   buttonInnerMargin: 44,
-  blueCageIcon: require('./images/BlueCageLogo.png'),
+  blueCageIcon: require('../resources/BlueCageLogo.png'),
 }
 
 export default class WelcomeScreen extends Component {
