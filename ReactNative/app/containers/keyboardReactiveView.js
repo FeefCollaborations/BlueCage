@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import {
-    AppRegistry,
     View,
     StyleSheet,
     Keyboard,
     Dimensions,
     LayoutAnimation,
 } from 'react-native';
-import NavigationBar from 'react-native-navbar';
 
 export default class KeyboardReactiveView extends Component {
   constructor(props) {
@@ -44,11 +42,9 @@ export default class KeyboardReactiveView extends Component {
 };
 
 const styles = StyleSheet.create({
-    rootView: {
-      flex:1,
-      flexDirection:'column',
-      justifyContent:'center',
-    }
+  rootView: {
+    flex:1,
+    flexDirection:'column',
+    justifyContent:'center',
+  }
 });
-
-AppRegistry.registerComponent('KeyboardReactiveView', () => KeyboardReactiveView);
