@@ -63,7 +63,6 @@ export default class SignUpScreen extends Component {
   }
 
   attemptLogin() {
-    console.log('trying');
     // TODO: Show "loading" alert, send off network request to validate account info, and respond to response appropriately
     this.props.navigator.push({
       component: conversationsScreen,
