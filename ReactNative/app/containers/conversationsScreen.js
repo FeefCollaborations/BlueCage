@@ -15,7 +15,7 @@ export default class ConversationsScreen extends Component {
     super();
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      dataSource: ds.cloneWithRows(['row 1', 'row 2']),
+      dataSource: ds.cloneWithRows(this.fakeData()),
     };
   }
   
@@ -41,26 +41,74 @@ export default class ConversationsScreen extends Component {
     );
   }
   
+  fakeData() {
+    return [
+      {
+        recipient: {
+          id: 0,
+          name: 'recipient name 0',
+        },
+        id: 0,
+        messages: [
+        ],
+        lastSeenMessageDate: new Date(100),
+      },
+      {
+        recipient: {
+          id: 1,
+          name: 'recipient name 1',
+        },
+        id: 1,
+        messages: [
+          {
+            id: 0,
+            text: 'text 0',
+            timestamp: new Date(100),
+          },
+          {
+            id: 1,
+            text: 'text 1',
+            timestamp: new Date(10000),
+          },
+        ],
+        lastSeenMessageDate: new Date(100),
+      }
+    ];
+  }
+  
   renderCell(rowData) {
-    let topViews = [
+    var topViews = [
       <Text style={styles.username} numberOfLines={1} key='0'>
-          {rowData}
-      </Text>,
-      <Text style={styles.timestamp} numberOfLines={1} key='1'>
-        {rowData}
+        {rowData.recipient.name}
       </Text>
     ];
-    let topRow = this.horizontalContainer(topViews, {key: 'top'});
-    let bottomViews = [
-      <Text style={styles.lastMessage} numberOfLines={2} key='0'>
-        wasdin
-      </Text>,
-      <View style={styles.badgeBackground} key='1'>
-        <Text style={styles.badgeText} numberOfLines={1} key='2'>
-          1
+    let lastMessage = rowData.messages[rowData.messages.length - 1];
+    if (lastMessage !== undefined) {
+      let dateString = lastMessage.timestamp.toLocaleDateString() + ' ' + lastMessage.timestamp.toLocaleTimeString();
+      topViews.push(
+        <Text style={styles.timestamp} numberOfLines={1} key='1'>
+          {dateString}
         </Text>
-      </View>
+      );
+    }
+    let topRow = this.horizontalContainer(topViews, {key: 'top'});
+    
+    let lastMessageText = lastMessage !== undefined ? lastMessage.text : 'Start the conversation!';
+    var bottomViews = [
+      <Text style={styles.lastMessage} numberOfLines={2} key='0'>
+        {lastMessageText}
+      </Text>
     ];
+    let unseenMessagesString = this.unseenMessagesString(rowData);
+    if (unseenMessagesString !== undefined) {
+      bottomViews.push(
+        <View style={styles.badgeBackground} key='1'>
+          <Text style={styles.badgeText} numberOfLines={1} key='2'>
+            {unseenMessagesString}
+          </Text>
+        </View>
+      );
+    }
     let bottomRow = this.horizontalContainer(bottomViews, {key: 'bottom'});
     return (
       <View style={styles.cell}>
@@ -78,6 +126,22 @@ export default class ConversationsScreen extends Component {
         {views}
       </View>
     );
+  }
+
+  unseenMessagesString(conversation) {
+    var unseenCount = 0;
+    for(i=conversation.messages.length-1; i>=0; i--) {
+      let message = conversation.messages[i];
+      if (message.timestamp.getTime() <= conversation.lastSeenMessageDate.getTime()) {
+        break;
+      }
+      console.log(conversation.lastSeenMessageDate.getTime + ' , ' + message.timestamp.getTime);
+      unseenCount++;
+      if (unseenCount >= 10) {
+        return '9+';
+      }
+    }
+    return unseenCount==0 ? undefined : unseenCount;
   }
 };
 
