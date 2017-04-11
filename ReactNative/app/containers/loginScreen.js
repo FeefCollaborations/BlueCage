@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-    AppRegistry,
     View,
     StyleSheet,
     TextInput,
@@ -10,7 +9,6 @@ import {
     Dimensions,
     LayoutAnimation,
 } from 'react-native';
-import NavigationBar from 'react-native-navbar';
 import KeyboardReactiveView from './keyboardReactiveView';
 import conversationsScreen from './conversationsScreen';
 import StyledNavigationBar from './styledNavigationBar';
@@ -33,7 +31,8 @@ export default class LoginScreen extends Component {
           leftButton={{
               title: 'Back',
               handler: () => this.props.navigator.pop(),
-        }}/>
+          }}
+        />
         <KeyboardReactiveView views={interactiveViews}/>
       </View>
     );
